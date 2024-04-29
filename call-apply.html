@@ -1,0 +1,40 @@
+<script>
+    
+    var emp={
+        info:function(country,state){
+            return this.Name+" "+this.address+" "+country+" "+state+"<br>"
+         }
+    }
+
+
+    var emp1= {
+        Name:"Ram",
+        Dept:"Sales",
+        Desig:"Manager",
+        salary:67000,
+        address:"Noida"
+        
+    }
+
+var  emp2=  {
+        Name:"Manish",
+        Dept:"Production",
+        Desig:"Supervisor",
+        salary:67000,
+        address:"Noida"
+    }
+ var emp3=  {
+        Name:"Ankit",
+        Dept:"Hr",
+        Desig:"Cleark",
+        salary:67000,
+        address:"Noida"
+    }
+
+
+    document.write(emp.info.apply(emp1,["India","UP"]));
+    document.write(emp.info.call(emp2,"India","MP"));
+
+
+
+</script>
